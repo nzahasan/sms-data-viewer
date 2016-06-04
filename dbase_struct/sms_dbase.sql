@@ -1,0 +1,52 @@
+-- start --
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+06:00";
+
+
+CREATE DATABASE IF NOT EXISTS `sms_dbase` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE `sms_dbase`;
+
+
+CREATE TABLE `rain_data` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `station_name` VARCHAR(45) NOT NULL,
+  `rainfall` FLOAT NOT NULL,
+  `time` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+CREATE TABLE `rain_station_detail` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `mobile_no` VARCHAR(45) NOT NULL,
+  `station_name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `water_level` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `station_name` VARCHAR(45) NOT NULL,
+  `water_level` FLOAT NOT NULL,
+  `time` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
+CREATE TABLE `wl_station_detail` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `mobile_no` VARCHAR(45) NOT NULL,
+  `station_name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+CREATE TABLE `raw_sms` ( 
+  `id` INT NOT NULL AUTO_INCREMENT , 
+  `sender` VARCHAR(15) NOT NULL , 
+  `text` VARCHAR(200) NOT NULL , 
+  `save_status` BOOLEAN NOT NULL , 
+  `time` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+-- end --

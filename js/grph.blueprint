@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Number of Persons involved in Traffic Accidents by Mode of Transport"
+      },
+      data: [//printed
+      {//loop_start 01
+        type: "stackedArea",
+        dataPoints: [
+        { x: new Date(2012, 00, 1), y: 861 },
+        { x: new Date(2012, 01, 1), y: 761 }
+        ]},//loopend 01
+      {
+        type: "stackedArea",
+        dataPoints: [
+        { x: new Date(2012, 00, 1), y: 220 },
+        { x: new Date(2012, 01, 1), y: 240 }
+        ]
+      }
+
+      ]//printed
+    });//printed
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
