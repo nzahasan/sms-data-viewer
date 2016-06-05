@@ -1,7 +1,6 @@
 *,html{ 
 	margin: 0; padding: 0;
 	box-sizing:border-box;
-
 }
 
 body{ display:none; height: 100%;width: 100%;}
@@ -16,6 +15,11 @@ body{ display:none; height: 100%;width: 100%;}
     font-family: 'Consolas';
     src: url('../fonts/Consolas_Bold.ttf');
     font-weight: bold;
+}
+
+@font-face{
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.ttf');
 }
 
 /*Font Awesome*/
