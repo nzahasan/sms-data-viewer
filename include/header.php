@@ -2,13 +2,15 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>SMS Data</title>
 	<link rel="shortcut icon" href="icons/favicon-area-chart.ico" type="image/x-icon" >
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="stylesheet" href="kalendae/kalendae.css" type="text/css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" > -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
+	<script src="kalendae/kalendae.standalone.min.js" type="text/javascript"></script>
 </head>
 
 <body oncontextmenu="return false">
