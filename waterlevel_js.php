@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 	var chart = new CanvasJS.Chart("graph",
 	{
-		title:{ text: "WL Data"},
+		title:{ text: "WL Data", fontSize: 25 },
 		animationEnabled: true,
 		axisY: { title: "Water Level" },
 		axisX: { labelAngle: -60 },
