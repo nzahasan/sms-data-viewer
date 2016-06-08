@@ -22,10 +22,7 @@
 		echo $print;
 
 	?>
-	<tr><td>12</td><td>ST003 17082015,09 1228,12 1254,15 1230,18 1231,06 1235</td><td style="color:red">Not Saved</td></tr>
-	<tr><td>12</td><td>ST003 18082015,09 1248,12 1254,15 1230,18 1231,06 1235</td><td style="color:green">Saved</td></tr>
-	<tr><td>12</td><td>ST003 19082015,09 1226,12 1254,15 1230,18 1231,06 1235</td><td style="color:red">Not Saved</td></tr>
-	<tr><td>12</td><td>ST003 20082015,09 1234,12 1254,15 1230,18 1231,06 1235</td><td style="color:green">Saved</td></tr>
+	
 </table>
 
 
