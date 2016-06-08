@@ -17,10 +17,6 @@ body{ display:none; height: 100%;width: 100%;}
     font-weight: bold;
 }
 
-@font-face{
-    font-family: 'Calibri';
-    src: url('../fonts/Calibri.ttf');
-}
 
 /*Font Awesome*/
 @font-face {

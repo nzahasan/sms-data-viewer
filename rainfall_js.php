@@ -8,10 +8,22 @@ $(document).ready(function() {
 	//rendering chart//
 	var chart = new CanvasJS.Chart("graph",
 	{
-		title:{ text: "Rainfall Data"}, //
+		title:{ 
+			text: "Rainfall Data", 
+			fontSize: 25, 
+			fontFamily: "Consolas"
+		}, 
+    	
     	animationEnabled: true,
-    	axisY: { title: "Rainfall" },
-    	axisX: { labelAngle: -60 },
+    	
+    	axisY: { 
+    		title: "Rainfall", 
+    		labelFontFamily: "Consolas" 
+    	},
+    	axisX: { 
+    		labelAngle: -60,
+    		labelFontFamily: "Consolas" 
+    	},
     	theme: "theme1",
 		data: [
 
