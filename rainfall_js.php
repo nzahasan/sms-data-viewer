@@ -8,7 +8,7 @@ $(document).ready(function() {
 	//rendering chart//
 	var chart = new CanvasJS.Chart("graph",
 	{
-		title:{ text: "Rainfall Data",fontSize: 25 }, //
+		title:{ text: "Rainfall Data"}, //
     	animationEnabled: true,
     	axisY: { title: "Rainfall" },
     	axisX: { labelAngle: -60 },
