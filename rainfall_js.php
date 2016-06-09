@@ -11,20 +11,23 @@ $(document).ready(function() {
 		title:{ 
 			text: "Rainfall Data", 
 			fontSize: 25, 
-			fontFamily: "Consolas"
+			fontFamily: "Courier",
+			fontWeight: "Normal"
 		}, 
-    	
-    	animationEnabled: true,
-    	
-    	axisY: { 
-    		title: "Rainfall", 
-    		labelFontFamily: "Consolas" 
-    	},
-    	axisX: { 
-    		labelAngle: -60,
-    		labelFontFamily: "Consolas" 
-    	},
-    	theme: "theme1",
+		
+		animationEnabled: true,
+		
+		axisY: { 
+			title: "Rainfall",
+			labelFontFamily: "Courier",
+			labelFontSize: 17
+		},
+		axisX: { 
+			labelAngle: -60,
+			labelFontFamily: "Courier",
+			labelFontSize: 17 
+		},
+		theme: "theme1",
 		data: [
 
 		{
@@ -86,8 +89,8 @@ $(document).ready(function() {
 		?> //end php
 		]}]});
 
+	
 	chart.render(); //end chart
-  
 	//style change when page loaded//
 	var rainLnk = document.getElementById("rain_lnk").style;
 	rainLnk.fontWeight="bold";

@@ -6,6 +6,12 @@
 body{ display:none; height: 100%;width: 100%;}
 
 @font-face{
+    font-family: 'Monaco';
+    src: url('../fonts/monaco.ttf');
+}
+
+
+@font-face{
     font-family: 'Consolas';
     src: url('../fonts/Consolas.ttf');
     font-weight: normal;
@@ -159,6 +165,7 @@ body{ display:none; height: 100%;width: 100%;}
 	background-color: #f7f7f7;
 	border: 0px solid white;
 	border-radius: 5px;
+	font-family: Consolas;
 
 }
 
@@ -224,7 +231,7 @@ body{ display:none; height: 100%;width: 100%;}
 }
 
 #menus ul li a{
-	width: 17%;
+	width: 18%;
 	padding: 1%;
 	margin-left: 1%;
 	text-decoration: none;

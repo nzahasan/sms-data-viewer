@@ -10,19 +10,22 @@ $(document).ready(function(){
 		title:{ 
 			text: "WL Data",
 			fontSize: 25,
-			fontFamily: "Consolas"
+			fontFamily: "Courier",
+			fontWeight: "Normal"
 		},
 		
 		animationEnabled: true,
 		
 		axisY: { 
 			title: "Water Level",
-			labelFontFamily: "Consolas" 
+			labelFontFamily: "Courier",
+			labelFontSize: 17
 		},
 		
 		axisX: { 
 			labelAngle: -60, 
-			labelFontFamily: "Consolas" 
+			labelFontFamily: "Courier",
+			labelFontSize: 17 
 		},
 		
 		theme: "theme1",
@@ -103,34 +106,33 @@ $(document).ready(function(){
 
 			}
 		?> // end of data generation
-]});
+	]});
 
-chart.render();
+	chart.render();
 
-// link style
-var wl_lnk = document.getElementById("wl_lnk").style;
-wl_lnk.fontWeight="bold";
-wl_lnk.color="#FFE300";
+	// link style
+	var wl_lnk = document.getElementById("wl_lnk").style;
+	wl_lnk.fontWeight="bold"; wl_lnk.color="#FFE300";
 
-document.getElementById("show").onclick = function(){
-	document.getElementById('menu_form').action="waterlevel.php";
-	document.getElementById('menu_form').submit();
-}
-
-document.getElementById("down").onclick = function(){
-	var start_date = document.getElementById("start_date").value;
-	var end_date = document.getElementById("end_date").value;
-	
-	if(start_date=="" || start_date==undefined || start_date==null){
-		alert("Start date is empty!"); return;
+	document.getElementById("show").onclick = function(){
+		document.getElementById('menu_form').action="waterlevel.php";
+		document.getElementById('menu_form').submit();
 	}
-	else if(end_date=="" || end_date==undefined || end_date==null){
-		alert("End date is empty!"); return;
+
+	document.getElementById("down").onclick = function(){
+		var start_date = document.getElementById("start_date").value;
+		var end_date = document.getElementById("end_date").value;
+		
+		if(start_date=="" || start_date==undefined || start_date==null){
+			alert("Start date is empty!"); return;
+		}
+		else if(end_date=="" || end_date==undefined || end_date==null){
+			alert("End date is empty!"); return;
+		}
+		
+		document.getElementById('menu_form').action="download_wl.php";
+		document.getElementById('menu_form').submit();
 	}
-	
-	document.getElementById('menu_form').action="download_wl.php";
-	document.getElementById('menu_form').submit();
-}
 
 });
 
