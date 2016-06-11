@@ -5,10 +5,6 @@
 
 body{ display:none; height: 100%;width: 100%;}
 
-@font-face{
-    font-family: 'Monaco';
-    src: url('../fonts/monaco.ttf');
-}
 
 @font-face{
     font-family: 'Consolas';
