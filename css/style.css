@@ -10,7 +10,6 @@ body{ display:none; height: 100%;width: 100%;}
     src: url('../fonts/monaco.ttf');
 }
 
-
 @font-face{
     font-family: 'Consolas';
     src: url('../fonts/Consolas.ttf');
