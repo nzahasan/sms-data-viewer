@@ -1,6 +1,11 @@
 *,html{ 
 	margin: 0; padding: 0;
 	box-sizing:border-box;
+	user-select: none; 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-touch-callout: none;
 }
 
 body{ display:none; height: 100%;width: 100%;}
@@ -354,6 +359,7 @@ body{ display:none; height: 100%;width: 100%;}
 	margin: 2% auto 0 auto;
 	font-family: Trebuchet Ms;
 	border-collapse: collapse;
+
 }
 
 #sms_log tr:nth-child(odd){

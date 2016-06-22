@@ -12,10 +12,10 @@
 		$print = "";
 		while($row = mysqli_fetch_assoc($result)){
 			if($row['save_status']==true){
-				$print .= "<tr><td>".$row['id']."</td><td>".$row['text']."</td><td style=\"color:green\">Saved</td></tr>";
+				$print .= "<tr><td>".$row['id']."</td><td class=\"edit\">".$row['text']."</td><td style=\"color:green\">Saved</td></tr>";
 			}
 			else if($row['save_status']==false){
-				$print .= "<tr><td>".$row['id']."</td><td>".$row['text']."</td><td style=\"color:red\">Not Saved</td></tr>";
+				$print .= "<tr><td>".$row['id']."</td><td class=\"edit\">".$row['text']."</td><td style=\"color:red\">Not Saved</td></tr>";
 			}
 		}
 
@@ -34,6 +34,11 @@ $(document).ready(function(){
 		$(this).slideDown(500)
 	});
 
+});
+
+$(".edit").on("dblclick",function(){
+	this.contentEditable = true;
+	this.focus();
 });
 
 document.getElementById("log_lnk").style.color="#FFE300";

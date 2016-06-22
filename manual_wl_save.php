@@ -1,18 +1,18 @@
 <?php
 include('include/connect.php');
 session_start();
-//ST001 01012000,09 1228,12 1229,15 1230,18 1231,06 1235
+//ST001 01012016,09 1228,12 1229,15 1230,18 1231,06 1235
 if (isset($_POST['wl_text'])) {
     $massege = $_POST['wl_text'];
     $exp = explode(",",$massege);
     if(sizeof($exp)==6){
         $wl =  explode(',',$massege);
-        $ini = explode(' ', $wl[0]);
-        $station = $ini[0];
+        $head = explode(' ', $wl[0]);
+        $station = $head[0];
 
-        $DD = $ini[1][0].$ini[1][1];
-        $MM = $ini[1][2].$ini[1][3];
-        $YYYY= $ini[1][4].$ini[1][5].$ini[1][6].$ini[1][7];
+        $DD = $head[1][0].$head[1][1];
+        $MM = $head[1][2].$head[1][3];
+        $YYYY= $head[1][4].$head[1][5].$head[1][6].$head[1][7];
 
         $d1=$YYYY."-".$MM."-".($DD-1)." "."09:00:00";
         $d2=$YYYY."-".$MM."-".($DD-1)." "."12:00:00";
@@ -33,13 +33,13 @@ if (isset($_POST['wl_text'])) {
         $query.= "('{$station}', '{$wl4}', '{$d4}'),";
         $query.= "('{$station}', '{$wl5}', '{$d5}')";
 
-        // mysqli_query($connection,$query);
+        mysqli_query($connection,$query);
         $_SESSION['manual_save']='ok';
-        echo $query;
+        // echo $query;
     }
 
 }
 
-// header('Location: manual_entry.php');
+header('Location: manual_entry.php');
 
 ?>

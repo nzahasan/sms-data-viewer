@@ -21,7 +21,7 @@
                         }
                     ?>
                 </select></td>
-                <td>START DATE: <input id="start_date" class="auto-kal" autocomplete="off" type="text" name="start_date"></td>
+                <td>START DATE: <input id="start_date" class="auto-kal" data-kal="format: null" autocomplete="off" type="text" name="start_date"></td>
                 <td>END DATE: <input id="end_date" class="auto-kal" autocomplete="off" type="text" name="end_date"></td>
 
             </tr>

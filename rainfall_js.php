@@ -52,8 +52,8 @@ $(document).ready(function() {
 					// 12-jan @ 00:00 and 21-jan @ 00:00 
 					
 					// formating date to timestamp
-					$startD=strtotime($_POST['start_date']." 00:00:00");
-					$endD = strtotime($_POST['end_date']." 00:00:00") + 24*60*60;
+					$startD=strtotime($_POST['start_date']);
+					$endD = strtotime($_POST['end_date']) + 24*60*60;
 					
 					// converting back to YYYY-MM-DD 12:12:34 format
 					$startD = date('Y-m-d H:i:s',$startD); 

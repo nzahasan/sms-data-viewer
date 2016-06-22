@@ -40,12 +40,12 @@ $(document).ready(function(){
 
 				echo "{ type: \"splineArea\",dataPoints: [\r\n";
 
-				$query = "SELECT * FROM water_level WHERE station_name='{$st_name}'";
+				$query = "SELECT * FROM water_level WHERE station_name='{$st_name}' ORDER BY time ASC";
 				
 				if( $_POST['start_date']!="" && $_POST['end_date']!="" ){
-					// formating date to timestamp
-					$startD=strtotime($_POST['start_date']." 00:00:00");
-					$endD = strtotime($_POST['end_date']." 00:00:00") + 24*60*60;
+					// formating date(mm/dd/yyyy) to UNIX time
+					$startD=strtotime($_POST['start_date']);
+					$endD = strtotime($_POST['end_date']) + 24*60*60;
 					
 					// converting back to YYYY-MM-DD 12:12:34 format
 					$startD = date('Y-m-d H:i:s',$startD); 
@@ -85,7 +85,7 @@ $(document).ready(function(){
 					
 					echo "{ type: \"splineArea\",dataPoints: [\r\n";
 
-					$query = "SELECT * FROM water_level WHERE station_name='{$st['station_name']}'";
+					$query = "SELECT * FROM water_level WHERE station_name='{$st['station_name']}' ORDER BY time ASC";
 					$result = mysqli_query($connection,$query);
 					
 					while($row=mysqli_fetch_assoc($result)){
