@@ -54,7 +54,7 @@ $(document).ready(function(){
 					$query.= " AND `time`>='{$startD}' AND `time`<='{$endD}'";
 				}
 
-				$query.= "ORDER BY time ASC LIMIT 200";
+				$query.= "ORDER BY time DESC LIMIT 200";
 
 				$result = mysqli_query($connection, $query);
 
@@ -87,7 +87,7 @@ $(document).ready(function(){
 					
 					echo "{ type: \"splineArea\",dataPoints: [\r\n";
 
-					$query = "SELECT * FROM water_level WHERE station_name='{$st['station_name']}' ORDER BY time ASC LIMIT 200";
+					$query = "SELECT * FROM water_level WHERE station_name='{$st['station_name']}' ORDER BY time DESC LIMIT 200";
 					$result = mysqli_query($connection,$query);
 					
 					while($row=mysqli_fetch_assoc($result)){
