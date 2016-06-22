@@ -7,12 +7,12 @@ if (isset($_POST['wl_text'])) {
     $exp = explode(",",$massege);
     if(sizeof($exp)==6){
         $wl =  explode(',',$massege);
-        $head = explode(' ', $wl[0]);
-        $station = $head[0];
+        $stationDate = explode(' ', $wl[0]);
+        $station = $stationDate[0];
 
-        $DD = $head[1][0].$head[1][1];
-        $MM = $head[1][2].$head[1][3];
-        $YYYY= $head[1][4].$head[1][5].$head[1][6].$head[1][7];
+        $DD = $stationDate[1][0].$stationDate[1][1];
+        $MM = $stationDate[1][2].$stationDate[1][3];
+        $YYYY= $stationDate[1][4].$stationDate[1][5].$stationDate[1][6].$stationDate[1][7];
 
         $d1=$YYYY."-".$MM."-".($DD-1)." "."09:00:00";
         $d2=$YYYY."-".$MM."-".($DD-1)." "."12:00:00";

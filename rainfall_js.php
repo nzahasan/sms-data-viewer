@@ -67,7 +67,7 @@ $(document).ready(function() {
 			}
 			// if no post select all data from all station
 			else{
-				$query = "SELECT `station_name`,`rainfall`,`time` FROM `rain_data` ORDER BY `id` DESC LIMIT 100";
+				$query = "SELECT `station_name`,`rainfall`,`time` FROM `rain_data` ORDER BY `time` ASC LIMIT 50";
 			}
 			$result = mysqli_query($connection, $query);
 

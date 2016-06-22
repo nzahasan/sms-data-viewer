@@ -1,5 +1,5 @@
 <?php
-//designed to work with SMS Enabler - fuck_SMS Enabler//
+//SENDER NO MUST EXIST IN DATABASE//
 //$_POST['sender'] = Sender Phone no.
 //$_POST['text'] = Massege Text
 

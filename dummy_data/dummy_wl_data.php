@@ -1,10 +1,10 @@
 <?php
     include('../include/connect.php');
-    $query = "INSERT INTO `water_level` (station_name,water_level) VALUES ('ST002','0')";
+    $query = "INSERT INTO `water_level` (station_name,water_level) VALUES ('ST001','0')";
 
-    for($i=2; $i<=200; $i+=0.5){
-        $x=sin($i);
-        $query.= ", ('ST002','{$x}')";
+    for($i=4; $i<=200; $i+=1){
+        $x=$i;
+        $query.= ", ('ST001','{$x}')";
     }
 
     $query .= ";";
