@@ -14,14 +14,14 @@
                             $print = '<option value="';
                             $print.= $row['station_name'];
                             $print.= '">';
-                            $print.= $row['station_name'];
+                            $print.= $row['station_location'].'('.$row['station_name'].')';
                             $print.= '</option>';
 
                             echo $print;
                         }
                     ?>
                 </select></td>
-                <td>START DATE: <input id="start_date" class="auto-kal" data-kal="format: null" autocomplete="off" type="text" name="start_date"></td>
+                <td>START DATE: <input id="start_date" class="auto-kal" autocomplete="off" type="text" name="start_date"></td>
                 <td>END DATE: <input id="end_date" class="auto-kal" autocomplete="off" type="text" name="end_date"></td>
 
             </tr>

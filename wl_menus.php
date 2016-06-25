@@ -9,14 +9,14 @@
                         <?php
                             include('include/connect.php');
 
-                            $resource = mysqli_query($connection, "SELECT station_name FROM wl_station_detail");
+                            $resource = mysqli_query($connection, "SELECT * FROM wl_station_detail");
 
                             while($row = mysqli_fetch_assoc($resource)){
 
                                 $print = '<option value="';
                                 $print.= $row['station_name'];
                                 $print.= '">';
-                                $print.= $row['station_name'];
+                                $print.= $row['station_location'].'('.$row['station_name'].')';;
                                 $print.= '</option>';
 
                                 echo $print;

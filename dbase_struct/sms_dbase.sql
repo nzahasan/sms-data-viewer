@@ -20,6 +20,7 @@ CREATE TABLE `rain_station_detail` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `mobile_no` VARCHAR(45) NOT NULL,
   `station_name` VARCHAR(45) NOT NULL,
+  `station_location` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 
@@ -37,6 +38,7 @@ CREATE TABLE `wl_station_detail` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `mobile_no` VARCHAR(45) NOT NULL,
   `station_name` VARCHAR(45) NOT NULL,
+  `station_location` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 

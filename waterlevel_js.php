@@ -92,6 +92,7 @@ $(document).ready(function(){
 					
 					while($row=mysqli_fetch_assoc($result)){
 						$date = explode(" ", $row['time']);
+					
 
 						$print = '{y: ';
 						$print.= $row['water_level'];
