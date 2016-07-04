@@ -91,6 +91,12 @@ $(document).ready(function() {
 
 	
 	chart.render(); //end chart
+
+	// set dates @page load
+
+	document.getElementById("start_date").value = firstDayOfThisMonth();
+	document.getElementById("end_date").value = date2day();
+	
 	//style change when page loaded//
 	var rainLnk = document.getElementById("rain_lnk").style;
 	rainLnk.fontWeight="bold";

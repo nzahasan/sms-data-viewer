@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<script type="text/javascript" src="kalendae/kalendae.standalone.min.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
 </head>
 
 <body oncontextmenu="return false">

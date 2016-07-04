@@ -113,6 +113,11 @@ $(document).ready(function(){
 
 	chart.render();
 
+	// set dates @page load
+
+	document.getElementById("start_date").value = firstDayOfThisMonth();
+	document.getElementById("end_date").value = date2day();
+
 	// link style
 	var wl_lnk = document.getElementById("wl_lnk").style;
 	wl_lnk.fontWeight="bold"; wl_lnk.color="#FFE300";
