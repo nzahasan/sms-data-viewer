@@ -22,7 +22,10 @@ if(isset($_POST['wl_station']) && isset($_POST['start_date']) && isset($_POST['e
 	// fetch the data
 	include('include/connect.php');
 
-	$query = "SELECT `station_name`,`water_level`,`time` FROM `water_level` WHERE station_name='{$_POST['wl_station']}' AND `time`>='{$startD}' AND `time` <='{$endD}'";
+	$query = "SELECT `station_name`,`water_level`,`time` FROM `water_level` 
+			WHERE station_name='{$_POST['wl_station']}' 
+			AND `time`>='{$startD}' AND `time` <='{$endD}' ORDER BY `time` ASC";
+	
 	$result_wl = mysqli_query($connection,$query);
 
 	// loop over the rows, outputting them
