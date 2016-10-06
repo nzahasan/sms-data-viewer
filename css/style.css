@@ -385,7 +385,7 @@ body{ display:none; height: 100%;width: 100%;}
 /*footer*/
 	/*devinfo*/
 #devinfo{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	/*background-color: #ccc;*/
@@ -398,6 +398,7 @@ body{ display:none; height: 100%;width: 100%;}
 	width: 100%;
 	text-align: center;
 	color: #ccc;
+	cursor: pointer;
 }
 
 #devinfo a:hover{
@@ -406,6 +407,7 @@ body{ display:none; height: 100%;width: 100%;}
 }
 
 #devinfo p{
+	cursor: default;
 	display: none;
 	font-family: Consolas;
 	width: 100%;

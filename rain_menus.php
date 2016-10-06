@@ -35,8 +35,13 @@
 
 </form>
 
-<!-- GRAPH div -->
-<div id="graph"> </div>
+<!-- <div id="graph"> </div> -->
+
+<!--chartjs GRAPH div -->
+<div style="width: 98%;margin:0 auto; height:450px !important;">
+    <canvas id="graph" width="400" style="font-family: Consolas"></canvas>
+</div>
+<!-- <div id="graph"> </div> -->
 
 
 

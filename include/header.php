@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="kalendae/kalendae.css" type="text/css">
 	<!-- Scripts -->
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/Chart.min.js"></script>
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<script type="text/javascript" src="kalendae/kalendae.standalone.min.js"></script>
 	<script type="text/javascript" src="js/date.js"></script>

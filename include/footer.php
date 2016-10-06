@@ -7,9 +7,5 @@
 		$("#devinfo a").on("click",function(){
 			$("#devinfo p").slideToggle(200);
 		});
-
-		// document.onmousedown = function(){
-		// 	if(event.button==2){ return false; }
-		// }
 	</script>
 </body></html>
